@@ -10,25 +10,28 @@
     <div class="container">
     <input id="num" type="text" placeholder="Enter Number"><br>
     <button id="tab">Enter</button>
-    <button id="res">Reset</button>
+    <button id="reset">Reset</button>
     <p id="sam">Table</p>
 </div>
 <script>
     var tableinput=document.getElementById("num")
     var result=document.getElementById("tab")
     var output=document.getElementById("sam")
-    var reset=document.getElementById("res")
-
+    var resetBtn=document.getElementById("reset");
+    
     result.addEventListener("click", function () {
         var num = Number(tableinput.value);
+        output.innerHTML="Table"
         
         for(var i=1;i<=10;i++){
         output.innerHTML+=`<br>${i}x ${num}=${i*num}`;
         console.log();
     }
     });
-    reset.addEventListener("click", function () {
-        <input type="reset">;
+
+    resetBtn.addEventListener("click", function () {
+            tableinput.value = "";
+            output.innerHTML = "Table";
     });
 </script>
 </body>
