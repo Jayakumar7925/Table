@@ -18,6 +18,10 @@ input,button,p{
     margin: 10px 0;
     border: none;
 }
+p{
+    text-align: center;
+    margin-bottom: 10px;
+}
 button:hover{
     background-color: cyan;
     transition: 0.6s;
