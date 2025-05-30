@@ -10,12 +10,14 @@
     <div class="container">
     <input id="num" type="text" placeholder="Enter Number"><br>
     <button id="tab">Enter</button>
+    <button id="res">Reset</button>
     <p id="sam">Table</p>
 </div>
 <script>
     var tableinput=document.getElementById("num")
     var result=document.getElementById("tab")
     var output=document.getElementById("sam")
+    var reset=document.getElementById("res")
 
     result.addEventListener("click", function () {
         var num = Number(tableinput.value);
@@ -25,6 +27,9 @@
         console.log();
     }
     });
+    reset.addEventListener("click", function () {
+        <input type="reset">
+    })
 </script>
 </body>
 </html>
